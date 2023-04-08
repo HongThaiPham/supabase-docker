@@ -50,14 +50,14 @@ server {
     # PG
     location ~ ^/pg/v1/(.*)$ {
         proxy_set_header Host $host;
-        proxy_pass http://kong:8000;
+        proxy_pass http://kong;
         proxy_redirect off;
     }
 
     # FUNCTIONS
     location ~ ^/functions/v1/(.*)$ {
         proxy_set_header Host $host;
-        proxy_pass http://kong:8000;
+        proxy_pass http://kong;
         proxy_redirect off;
     }
 
