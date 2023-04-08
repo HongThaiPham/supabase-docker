@@ -15,7 +15,7 @@ services:
     volumes:
       - ./nginx:/etc/nginx
     ports:
-      - 80:80/tcp
+      - 80:80
     restart: always
 
   studio:
