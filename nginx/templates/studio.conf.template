@@ -15,7 +15,7 @@ upstream kong {
 server {
     listen 80;
     listen [::]:80;
-    server_name supabase.yourdomain.com;
+    server_name s1.leopham.dev;
 
     # REST
     location ~ ^/rest/v1/(.*)$ {
